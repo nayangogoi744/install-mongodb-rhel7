@@ -1,0 +1,10 @@
+---
+- name: install
+  hosts: mongo-vm
+  become: yes
+  vars:
+    mongodb:
+      dbpath: /var/lib/mongo
+  roles:
+    - mongodb
+    
